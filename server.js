@@ -37,7 +37,7 @@ app.use(koaBody({
   json: true,
 }));
 
-const port = process.env.PORT || 7070;
+const port = process.env.PORT || 3001;
 const server = http.createServer(app.callback());
 const wsServer = new WS.Server({
   server
